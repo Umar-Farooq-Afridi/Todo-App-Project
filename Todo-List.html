@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List Project</title>
+    <link rel="stylesheet" href="Styles/Todo-List.css" />
+</head>
+
+<body>
+    <div class="todo-app-container">
+        <header class="todo-header">
+            <h1>Todo List App</h1>
+        </header>
+
+        <section class="todo-input-section">
+            <input type="text" placeholder="Enter todo name" class="todo-input js-name-input" />
+
+            <input type="date" class="todo-date-input js-due-date-input" />
+
+            <button class="todo-add-button js-todo-add-button" onclick="addTodo()">
+                Add
+            </button>
+        </section>
+
+        <section class="todo-list-section">
+            <div class="todo-list js-todo-list"></div>
+        </section>
+    </div>
+
+    <script src="Scripts/Todo-List.js"></script>
+</body>
+
+</html>

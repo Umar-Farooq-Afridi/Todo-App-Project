@@ -1,0 +1,140 @@
+/* Reset default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+/* Main container */
+.todo-app-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Header section */
+.todo-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.todo-header h1 {
+  font-size: 28px;
+  color: #4a90e2;
+}
+
+/* Input section */
+.todo-input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.todo-input,
+.todo-date-input {
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+.todo-input:focus,
+.todo-date-input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.todo-add-button {
+  padding: 10px 14px;
+  font-size: 16px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.todo-add-button:hover {
+  background-color: #357ab7;
+}
+
+/* Todo list section */
+.todo-list-section {
+  margin-top: 20px;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Individual todo item */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f0f4f8;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.todo-item div:first-child {
+  flex-grow: 1;
+}
+
+.todo-item span {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* Buttons inside each todo item */
+.todo-delete-button,
+.todo-edit-button {
+  font-size: 14px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: white;
+  margin-left: 6px;
+}
+
+/* Specific colors */
+.todo-delete-button {
+  background-color: #e74c3c;
+}
+
+.todo-delete-button:hover {
+  background-color: #c0392b;
+}
+
+.todo-edit-button {
+  background-color: #f1c40f;
+  color: #fff;
+}
+
+.todo-edit-button:hover {
+  background-color: #d4ac0d;
+}
